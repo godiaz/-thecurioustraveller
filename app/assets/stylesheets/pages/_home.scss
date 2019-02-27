@@ -4,8 +4,8 @@
   margin: 10px 0 40px 0;
 
   & img {
-    height: 270px;
-    width: 550px;
+    height: 290px;
+    width: 530px;
     background-size: contain;
   }
 
@@ -454,3 +454,7 @@
 //     color: #B7B7B7;
 //   }
 // }
+
+
+@media only screen and (max-width: 1200px) {
+}

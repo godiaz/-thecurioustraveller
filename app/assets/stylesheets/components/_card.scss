@@ -128,5 +128,17 @@
       color: #868686;
       margin: 30px 0 0 0;
     }
+
+    & li {
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: #868686;
+      margin: 0px 0 0 0;
+    }
+
+    & ul {
+      margin: 10px 0 0 0 ;
+    }
   }
 }
