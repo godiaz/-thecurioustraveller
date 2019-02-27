@@ -1,1 +1,456 @@
-// Specific CSS for your home-page
+
+.event-picture {
+  @include absCenterColumn
+  margin: 10px 0 40px 0;
+
+  & img {
+    height: 270px;
+    width: 550px;
+    background-size: contain;
+  }
+
+  & h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #999999;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+}
+
+.section {
+
+
+  &_one {
+    width: 100%;
+    height: 733px;
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.0)
+      ),
+      url('https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & h1 {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 75px;
+      margin-bottom: 0;
+    }
+
+    & p {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    &_navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 80px 0px 260px 0px;
+      height: 65px;
+      width: 80%;
+      // background-color: white;
+
+      & a:nth-child(1) {
+        background-color: $main-color;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+      }
+
+      & a:nth-child(2) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+        border-right: 1px solid #DBDBDB;
+
+        &:hover {
+          background-color: $main-color;
+          color: white;
+        }
+      }
+
+      & a:nth-child(3) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+        border-right: 1px solid #DBDBDB;
+
+        &:hover {
+          background-color: $main-color;
+          color: white;
+        }
+      }
+
+      & a:nth-child(4) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $main-color;
+          color: white;
+        }
+      }
+    }
+
+    &_tour-info {
+      width: 420px;
+      height: 147px;
+      background-color: $main-color;
+      @include absCenter;
+      display: flex;
+      flex-direction: column;
+
+      &_first {
+        display: flex;
+        align-items: center;
+
+        & p:first-child{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 400;
+          color: white;
+          font-size: 47px;
+        }
+
+        & p:last-child{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 400;
+          color: white;
+          font-size: 24px;
+        }
+      }
+
+      &_second {
+
+        & p {
+          color: white;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+
+  &_two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+  }
+
+  &_three {
+    background-color: white;
+    @include absCenterColumn
+    padding: 120px 0px;
+
+    &_header {
+      width: 87%;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 37px;
+      color: #707070;
+      margin-bottom: 40px;
+    }
+
+    &_content {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.sponsors {
+  width: 100%;
+  height: 128px;
+  background-color: #EAECEB;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 180px;
+
+  &_one {
+
+    $base: $main-color;
+    $text: #555;
+    $invalid: #E91E63;
+    $width: 300px;
+    $cubic: cubic-bezier(.64,.09,.08,1);
+
+    & form {
+
+      font-family: 'Quicksand', sans-serif;
+      width: $width + 60px;
+      margin: 70px auto 0;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 0 40px;
+      border-radius: 3px;
+      color: $text;
+      background: #FBFBFB;
+      height: 510px;
+
+      html, body {
+        overflow-x: hidden;
+      }
+
+      html, body, form, span, h1 {
+          box-sizing: border-box;
+      }
+
+      h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        width: 100%;
+        background: $base;
+        padding: 20px;
+        color: white;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+        border-radius: 3px 3px 0 0;
+        margin: 0;
+      }
+
+      input::-webkit-input-placeholder,
+      textarea::-webkit-input-placeholder {
+        font: inherit;
+        transition: transform 0.3s ease-in-out,
+          font-size 0.3s ease-in-out,
+          visibility 0.3s ease-in-out;
+      }
+
+      input,
+      textarea {
+        font: inherit;
+        font-size: 0.8em;
+        margin: 28px 25px 10px;
+        width: $width;
+        display: block;
+        border: none;
+        padding: 20px 0 10px;
+        border-bottom: solid 1px $base;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $base 4%);
+        background-position: -$width 0;
+        background-size: $width 100%;
+        background-repeat: no-repeat;
+        transition: background 0.3s $cubic;
+        resize: none;
+        overflow: hidden;
+        &:focus::-webkit-input-placeholder {
+          color: $base;
+        }
+        &:focus,
+        &:valid {
+          box-shadow: none;
+          outline: none;
+          background-position: 0 0;
+          &::-webkit-input-placeholder {
+            font-size: 0.8em;
+            transform: translateY(-20px);
+            visibility: visible !important;
+            opacity: 1;
+          }
+        }
+      }
+
+      input[type="email"] {
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $base 4%);
+        background-position: -400px 0;
+        background-repeat: no-repeat;
+        transition: border-bottom 0.3s ease, background 0.3s ease;
+        &~span.validation-text {
+          position: absolute;
+          visibility: hidden;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 0.6em;
+          width: $width;
+          margin-left: 25px;
+          margin-top:-5px;
+          color: white;
+          transition: color 0.3s ease-in-out;
+        }
+        &:not([value=""]) {
+          &::-webkit-input-placeholder {
+            font-size: 0.8em;
+            transform: translateY(-20px);
+            visibility: visible !important;
+            opacity: 1;
+          }
+          &:focus::-webkit-input-placeholder {
+            color: $base;
+          }
+          &:focus:not(:valid)::-webkit-input-placeholder {
+            color: $invalid;
+          }
+        }
+        &:focus {
+          background-position: 0 0;
+          &:not(:valid):not([value=""]) {
+            border-bottom: solid 1px $invalid;
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $invalid 4%);
+          }
+        }
+        &:not(:focus):not(:valid):not([value=""]) {
+          &::-webkit-input-placeholder {
+            color: $invalid;
+          }
+          border-bottom: solid 1px $invalid;
+          background-position: 0 0 ;
+          background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $invalid 4%);
+          &~span.validation-text {
+            visibility: visible;
+            color: $invalid;
+          }
+        }
+      }
+
+      .flex {
+        display: flex;
+        align-items: stretch;
+        textarea {
+          line-height: 120%;
+        }
+      }
+
+      .contact_form_button {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        transition: transform 0.2s $cubic,
+           box-shadow 0.2s $cubic;
+        border: none;
+        background: $base;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 6px;
+        height: 40px;
+        width: $width;
+        color: white;
+        margin: 30px 0 0 25px;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+        }
+      }
+
+      /*a {
+        display: inline-block;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'roboto', sans-serif;
+        text-decoration: none;
+        color: $base;
+        i {
+          margin-right: 5px;
+        }
+      }*/
+
+      a {
+        width: 42px;
+        height: 42px;
+        border-radius: 50px;
+        background: $base;
+        display: inline-block;
+        margin: 50px calc(50% - 21px);
+        white-space: nowrap;
+        padding: 13px;
+        box-sizing: border-box;
+        color: white;
+        transition: all 0.2s $cubic;
+        font-family: Roboto, sans-serif;
+        text-decoration: none;
+        box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+        i {
+          margin-right: 20px;
+          transition: margin-right 0.2s $cubic;
+        }
+        &:hover {
+          width: 134px;
+          transform: translateX(-50px);
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &_two {
+    @include absCenterColumn;
+  }
+
+  &_three {
+    @include absCenterColumn;
+  }
+}
+
+// .review {
+//   width: 350px;
+//   @include absCenterColumn;
+
+//   &_header {
+//     width: 350px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     & h4 {
+//       font-family: 'Quicksand', sans-serif;
+//       font-weight: 300;
+//       color: $main-color;
+//       font-size: 17px;
+//     }
+//   }
+
+//   &_stars {
+//     display: flex;
+//     color: $main-color;
+//     font-size: 17px;
+//   }
+
+//   &_text {
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 11px;
+//     font-weight: 300;
+//     color: #B7B7B7;
+//   }
+// }
