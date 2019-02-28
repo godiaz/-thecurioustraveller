@@ -17,7 +17,7 @@
     </div>
   </div>
 </section>
-<section class="section_two" id="activities">
+<section class="section_two">
   <div class="card">
     <img src="https://images.pexels.com/photos/1097425/pexels-photo-1097425.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="wine">
     <h3>WINE TASTING</h3>
@@ -29,7 +29,7 @@
     </a>
   </div>
   <div class="card">
-    <img src="https://images.pexels.com/photos/1007836/pexels-photo-1007836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="wine">
+    <%= image_tag 'boat.png' %>
     <h3>BOAT TRAVEL</h3>
     <h4>Cape Town Bay</h4>
     <p>Relax on a luxury boat as you sail past breath-taking views.</p>
@@ -49,7 +49,7 @@
     </a>
   </div>
 </section>
-<section class="section_three">
+<section class="section_three" id="activities">
   <h3 class="section_three_header">LIST OF ACTIVITIES</h3>
   <div class="section_three_content">
     <div>
@@ -120,7 +120,7 @@
     </div>
     <div>
       <div class="event-picture">
-        <%= image_tag 'https://images.pexels.com/photos/240561/pexels-photo-240561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+        <%= image_tag 'baypic.png' %>
         <!-- <h4>ASK US ABOUT EXTRA ACTIVITES THAT CAN BE ADDED TO YOUR <span>SCHEDULE</span></h4> -->
       </div>
       <div class="event-card">
@@ -158,6 +158,77 @@
     </div>
   </div>
 </section>
+<section class="section_four" id="costs">
+  <div class="section_four_left">
+    <h4>COST OF THE TOUR</h4>
+    <div class="section_four_left_orange-header">
+      <h5>TOTAL COSTS OF THE TOUR<h5>
+      <h5>£1200 (VAT inc.)</h5>
+    </div>
+    <p>Below is the list of activities that the entire tour include, feel free to ask about extras</p>
+    <div class="section_four_left_list">
+      <div>
+        <h5>What's included?</h5>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Airport pickup</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Accomodation</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Breakfast</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Group Photgrapher</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Activites</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Transport</p>
+        </div>
+      </div>
+      <div>
+        <h5>What's <span>NOT</span> included?</h5>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Flights</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Visa cost/procedures</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Insurance</p>
+        </div>
+        <div class="section_four_left_list_bullet">
+          <span></span>
+          <p>Meals Unless Stated</p>
+        </div>
+      </div>
+    </div>
+    <p>**Please note although THEE CURIOUS TRAVELLER has organised and will be managing the entire trip. All individual tours will be conducted by a professional experienced local tour guide</p>
+    <p>To Book: Pay in full or secure a spot with £300 deposit. Monthly down payments accepted.</p>
+    <p>Accepted payment options: Paypal via invoice</p>
+  </div>
+  <div class="section_four_right">
+    <div class="section_four_right_left-pictures">
+      <%= image_tag 'https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+      <%= image_tag 'https://images.pexels.com/photos/1543411/pexels-photo-1543411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' %>
+      <%= image_tag 'https://images.pexels.com/photos/691637/pexels-photo-691637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+    </div>
+    <div class="section_four_right_right-picture">
+      <%= image_tag 'https://images.pexels.com/photos/1121316/pexels-photo-1121316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+    </div>
+  </div>
+</section>
 <section class="contact" id="contact">
   <div class="contact_one">
     <form action="https://formspree.io/elias.kuyela@kuukatechnologies.com" method="post">
@@ -172,10 +243,33 @@
     </form>
   </div>
   <div class="contact_two">
-
+    <div class="contact_two_card">
+      <%= image_tag 'https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+      <h4>WILD</h4>
+    </div>
+    <div class="contact_two_card">
+      <%= image_tag 'https://images.pexels.com/photos/38280/monkey-mandril-africa-baboon-38280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' %>
+      <h4>NATURE</h4>
+    </div>
   </div>
   <div class="contact_three">
-
+    <div>
+      <h4>ACCOMODATION</h4>
+      <div class="contact_three_text">
+        <p>SEA POINT (15min walk to Clifton and Camps Bay Beach)</p>
+        <p><i class="fas fa-thumbtack"></i>20mins by car to the Airport</p>
+        <p><i class="fas fa-thumbtack"></i>30mins walk to Penguin Site</p>
+        <p><i class="fas fa-thumbtack"></i>10mins  walking from SA Stadium</p>
+        <p><i class="fas fa-thumbtack"></i>20 mins walking to Laguna Beach</p>
+        <h5>PLEASE CONSIDER</h5>
+        <p  class="contact_three_text_consider">
+          Food allergies or special foods should be requested 1 month prior to the booking in order to check availability.
+        </p>
+        <p  class="contact_three_text_consider">
+          Any medical condition that requires attention should be communicated prior to any bookings. Please let us know how can we help.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 <section class="sponsors">
