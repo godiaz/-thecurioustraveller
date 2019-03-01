@@ -1,0 +1,54 @@
+.consider {
+  padding: 50px 100px;
+  @include absCenter;
+
+  &_box {
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    padding: 20px 30px;
+
+    & h5 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      color: $main-color;
+      font-size: 16px;
+    }
+
+    & p {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      color: #949494;
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 880px)  {
+
+  .consider {
+    padding: 20px 20px;
+    @include absCenter;
+
+    &_box {
+      border-radius: 3px;
+      background-color: #FBFBFB;
+      padding: 20px 30px;
+
+      & h5 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        color: $main-color;
+        font-size: 14px;
+      }
+
+      & p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: #949494;
+        font-size: 12px;
+      }
+    }
+  }
+
+}
