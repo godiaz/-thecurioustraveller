@@ -121,7 +121,7 @@
     }
 
     &_tour-info {
-      width: 420px;
+      width: 450px;
       height: 147px;
       background-color: $main-color;
       @include absCenter;
@@ -130,7 +130,7 @@
 
       &_first {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
 
         & p:first-child{
           font-family: 'Quicksand', sans-serif;
@@ -144,6 +144,13 @@
           font-weight: 400;
           color: white;
           font-size: 24px;
+          margin: 0 0 10px 10px;
+
+          & span {
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 300;
+          }
         }
       }
 
@@ -449,7 +456,7 @@
 
         &_tour-info {
           margin-top: 130px;
-          width: 280px;
+          width: 290px;
           height: 110px;
           background-color: $main-color;
           @include absCenter;
@@ -468,6 +475,7 @@
               font-weight: 400;
               color: white;
               font-size: 24px;
+              margin-bottom: 5px;
             }
 
             & p:last-child{
@@ -475,6 +483,13 @@
               font-weight: 400;
               color: white;
               font-size: 16px;
+              margin: 0 0 0 0;
+
+              & span {
+                font-size: 10px;
+                letter-spacing: 1px;
+                font-weight: 300;
+              }
             }
           }
 
