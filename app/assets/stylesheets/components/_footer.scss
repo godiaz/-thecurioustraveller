@@ -79,7 +79,7 @@
 @media only screen and (max-width: 880px)  {
 
     .hoxton-footer {
-      height: 90px;
+      height: 130px;
       width: 100%;
       background-color: #3D454E;
 
@@ -87,6 +87,7 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
+      flex-direction: column;
 
       &_first {
         color: white;
