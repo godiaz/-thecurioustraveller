@@ -1,2 +1,66 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "zanzibar";
+
+.home {
+  position: relative;
+}
+
+.zanzibar-button {
+  position: fixed;
+    top: 92vh;
+    right:  50px;
+  //STYLING
+  background-color: $second-color;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  color: white;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: $second-color-dark;
+    top: 91vh;
+  }
+}
+
+.south-africa-button {
+  position: fixed;
+    top: 92vh;
+    right:  50px;
+  //STYLING
+  background-color: $main-color;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  color: white;
+  transition: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: $main-color-dark;
+    top: 91vh;
+  }
+}
+
+
+@media only screen and (max-width: 880px) {
+  .zanzibar-button {
+    padding: 8px 20px;
+    font-size: 14px;
+    top: 93vh;
+    right: 20px;
+  }
+
+  .south-africa-button {
+    padding: 8px 20px;
+    font-size: 14px;
+    top: 93vh;
+    right: 20px;
+  }
+}

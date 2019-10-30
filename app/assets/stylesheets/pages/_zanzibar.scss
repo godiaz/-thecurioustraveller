@@ -1,0 +1,609 @@
+
+.zevent-picture {
+  @include absCenterColumn
+  margin: 10px 0 40px 0;
+
+  & img {
+    height: 290px;
+    width: 550px;
+    background-size: contain;
+  }
+
+  & h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #999999;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+
+    & span {
+      color: $main-color;
+    }
+  }
+
+}
+
+.zsection {
+
+
+  &_one {
+    width: 100%;
+    height: 733px;
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.35)
+      ),
+      url('https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & h1 {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 75px;
+      margin-bottom: 0;
+    }
+
+    & p {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    &_navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 80px 0px 260px 0px;
+      height: 65px;
+      width: 80%;
+      // background-color: white;
+
+      & a:nth-child(1) {
+        background-color: $second-color;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+      }
+
+      & a:nth-child(2) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+        border-right: 1px solid #DBDBDB;
+
+        &:hover {
+          background-color: $second-color;
+          color: white;
+        }
+      }
+
+      & a:nth-child(3) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+        border-right: 1px solid #DBDBDB;
+
+        &:hover {
+          background-color: $second-color;
+          color: white;
+        }
+      }
+
+      & a:nth-child(4) {
+        background-color: white;
+        padding: 20px 70px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $second-color;
+          color: white;
+        }
+      }
+    }
+
+    &_tour-info {
+      width: 450px;
+      height: 147px;
+      background-color: $second-color;
+      @include absCenter;
+      display: flex;
+      flex-direction: column;
+
+      &_first {
+        display: flex;
+        align-items: flex-end;
+
+        & p:first-child{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 400;
+          color: white;
+          font-size: 47px;
+        }
+
+        & p:last-child{
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 400;
+          color: white;
+          font-size: 24px;
+          margin: 0 0 10px 10px;
+
+          & span {
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      &_second {
+
+        & p {
+          color: white;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+
+  &_two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+  }
+
+  &_three {
+    background-color: white;
+    @include absCenterColumn
+    margin: 120px 0px;
+
+    &_header {
+      width: 87%;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 37px;
+      color: #707070;
+      margin-bottom: 40px;
+    }
+
+    &_content {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &_four {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 50px 50px 140px 50px;
+
+    &_left {
+      width: 500px;
+
+      & h4 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        color: #707070;
+        text-transform: uppercase;
+        font-size: 36px;
+      }
+
+      &_orange-header {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: $second-color;
+        text-transform: uppercase;
+        font-size: 21px;
+      }
+
+      & p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: #9C9C9C;
+        font-size: 12px;
+      }
+
+      &_list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        & h5 {
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 400;
+          color: #707070;
+          font-size: 21px;
+        }
+
+        &_bullet {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 10px 0;
+
+          & span {
+            height: 15px;
+            width: 15px;
+            background: $second-color;
+          }
+
+          & p {
+            margin: 0 0 0 15px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    &_right {
+      display: flex;
+
+      &_left-pictures {
+        height: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        & img {
+          height: 155px;
+          width: 240px;
+          margin: 10px;
+        }
+      }
+
+      &_right-picture {
+
+        & img {
+          height: 510px;
+          width: 300px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 580px) {
+
+}
+
+@media only screen and (max-width: 880px)  {
+
+  .zevent-picture {
+    @include absCenterColumn
+    margin: 10px 0 40px 0;
+
+    & img {
+      height: 190px;
+      width: 300px;
+      background-size: contain;
+    }
+
+    & h4 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+      color: #999999;
+      font-size: 14px;
+      margin: 5px 0 0 0;
+
+      & span {
+        color: $second-color;
+      }
+    }
+  }
+
+    .zsection {
+
+
+      &_one {
+        width: 100%;
+        height: 600px;
+        background-image:
+          linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.0)
+          ),
+          url('https://images.pexels.com/photos/449627/pexels-photo-449627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        & h1 {
+          color: white;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 50px;
+          margin-top: 130px;
+          margin-bottom: 0;
+          width: 80%;
+          text-align: center;
+        }
+
+        & p {
+          color: white;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          margin: 0;
+        }
+
+        &_navigation {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 80px 0px 260px 0px;
+          height: 65px;
+          width: 80%;
+          // background-color: white;
+
+          & a:nth-child(1) {
+            background-color: $second-color;
+            padding: 20px 70px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+          }
+
+          & a:nth-child(2) {
+            background-color: white;
+            padding: 20px 70px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: #9C9C9C;
+            text-decoration: none;
+            border-right: 1px solid #DBDBDB;
+
+            &:hover {
+              background-color: $second-color;
+              color: white;
+            }
+          }
+
+          & a:nth-child(3) {
+            background-color: white;
+            padding: 20px 70px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: #9C9C9C;
+            text-decoration: none;
+            border-right: 1px solid #DBDBDB;
+
+            &:hover {
+              background-color: $second-color;
+              color: white;
+            }
+          }
+
+          & a:nth-child(4) {
+            background-color: white;
+            padding: 20px 70px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: #9C9C9C;
+            text-decoration: none;
+
+            &:hover {
+              background-color: $second-color;
+              color: white;
+            }
+          }
+        }
+
+        &_tour-info {
+          margin-top: 130px;
+          width: 290px;
+          height: 110px;
+          background-color: $second-color;
+          @include absCenter;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+
+          &_first {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            & p:first-child{
+              font-family: 'Quicksand', sans-serif;
+              font-weight: 400;
+              color: white;
+              font-size: 24px;
+              margin-bottom: 5px;
+            }
+
+            & p:last-child{
+              font-family: 'Quicksand', sans-serif;
+              font-weight: 400;
+              color: white;
+              font-size: 16px;
+              margin: 0 0 0 0;
+
+              & span {
+                font-size: 10px;
+                letter-spacing: 1px;
+                font-weight: 300;
+              }
+            }
+          }
+
+          &_second {
+
+            & p {
+              color: white;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 300;
+              font-size: 8px;
+            }
+          }
+        }
+
+      }
+
+      &_two {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 1300px;
+        background-color: white;
+      }
+
+      &_three {
+        background-color: white;
+        @include absCenterColumn
+        margin: 120px 0px 10px 0px;
+
+        &_header {
+          width: 100%;
+          text-align: center;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 28px;
+          color: #707070;
+          margin-bottom: 40px;
+        }
+
+        &_content {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+      }
+
+      &_four {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px 40px 20px 40px;
+
+        &_left {
+          width: 400px;
+
+          & h4 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            color: #707070;
+            text-transform: uppercase;
+            font-size: 30px;
+          }
+
+          &_orange-header h5{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            color: $second-color;
+            text-transform: uppercase;
+            font-size: 11px;
+          }
+
+          & p {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            color: #9C9C9C;
+            font-size: 12px;
+          }
+
+          &_list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            & h5 {
+              font-family: 'Quicksand', sans-serif;
+              font-weight: 400;
+              color: #707070;
+              font-size: 14px;
+            }
+
+            &_bullet {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin: 10px 0;
+
+              & span {
+                height: 15px;
+                width: 15px;
+                background: $second-color;
+              }
+
+              & p {
+                margin: 0 0 0 15px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        &_right {
+          display: flex;
+
+          &_left-pictures {
+            height: 510px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            & img {
+              height: 155px;
+              width: 240px;
+              margin: 10px;
+            }
+          }
+
+          &_right-picture {
+
+            & img {
+              height: 510px;
+              width: 300px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+}
+
+

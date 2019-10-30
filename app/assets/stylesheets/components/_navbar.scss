@@ -5,7 +5,7 @@
   width: 100%;
   padding-top: 10px;
   border-top: transparent;
-  background-color: #FF9686;
+  background-color: $main-color-light;
   overflow: hidden;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -24,7 +24,7 @@
 
 // SLIDING FUNCTION
 
-label[for="toggle"] {
+.label {
   font-size: 15px;
   font-weight: 400;
   color: white;
