@@ -9,7 +9,9 @@
   </div>
   <div class="hoxton-footer_third">
     <p>info@theecurioustraveller.com | email address</p>
-    <%= link_to 'Terms & Conditions', 'TNC.pdf', download: 'data' %>
+    <%= link_to download_pdf_path + "?name=TNC" do %>
+      <p>Terms & Conditions</p>
+    <% end %>
   </div>
 </footer>
 <div class="hoxton">
