@@ -8,6 +8,10 @@
 
   &_one {
 
+    & a {
+      color: white;
+    }
+
     & h3 {
       font-family: 'Quicksand', sans-serif;
       color: white;
@@ -34,7 +38,7 @@
       font-family: 'Quicksand', sans-serif;
       color: white;
       font-weight: 300;
-      font-size: 11px;
+      font-size: 13px;
     }
   }
 
