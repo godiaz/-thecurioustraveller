@@ -6,7 +6,8 @@
     height: 169px;
     width: 169px;
     border-radius: 50%;
-    background-size: contain;
+    background-size: cover;
+    object-fit: cover;
   }
 
   & h3 {
